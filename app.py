@@ -25,7 +25,7 @@ client = Groq(api_key=api_key)
 # --- Бет ---
 st.set_page_config(page_title="Мәтінді мазмұндау", layout="centered")
 st.title("📄 Мәтінді қысқаша мазмұндаушы")
-st.markdown("Groq-тың көмегімен мәтінді қысқа әрі түсінікті етіп беремін.")
+st.markdown("Мәтінді қысқа әрі түсінікті етіп беремін.")
 
 # --- Файл жүктеу ---
 uploaded_file = st.file_uploader(
@@ -111,3 +111,7 @@ if st.button("🚀 Мазмұндау", type="primary", use_container_width=True
             
         except Exception as e:
             st.error(f"❌ Қате: {e}")
+
+
+
+git add app.py
