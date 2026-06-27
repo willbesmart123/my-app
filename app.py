@@ -114,4 +114,3 @@ if st.button("🚀 Мазмұндау", type="primary", use_container_width=True
 
 
 
-git add app.py
