@@ -1,4 +1,12 @@
 import streamlit as st
+PWA_HTML = """
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+"""
+st.markdown(PWA_HTML, unsafe_allow_html=True)
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
