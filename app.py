@@ -1,4 +1,13 @@
 import streamlit as st
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .stAppDeployButton {display:none;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 import os
 from groq import Groq
 import PyPDF2
